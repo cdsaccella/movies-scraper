@@ -1,0 +1,12 @@
+name: Flake8
+
+on: [pull_request]
+
+jobs:
+  flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Flake8
+        uses: pazos/flake8-action@v2.2.0

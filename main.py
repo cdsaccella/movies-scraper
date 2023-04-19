@@ -12,7 +12,7 @@ logging.basicConfig(
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description='Scrape top movies from IMDb')
+    parser = argparse.ArgumentParser(description='Scrape movies')
     parser.add_argument(
         'relative_url',
         type=str, help='URL to scrape movies from'
