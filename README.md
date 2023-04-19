@@ -18,6 +18,4 @@ To run the script, simply execute the following command in your terminal:
 python main.py /chart/top --scraper imdb --output top_movies.csv --quantity 10
 ```
 
-The script will create a `top_movies.csv` (`output`) file in the root directory of the repository with the data of the top (`/chart/top`) 10 (`quantity`) movies on IMDB (`scraper`).
-
-Also, you can use the following parameters:
+The script will create a `top_movies.csv` file in the root directory of the repository with the data of the top 10 movies on IMDB.
