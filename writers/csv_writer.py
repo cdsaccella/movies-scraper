@@ -16,7 +16,10 @@ class CSVWriter:
             mode='w', newline='',
             encoding='utf-8'
         ) as csv_file:
-            writer = csv.writer(csv_file)
+            writer = csv.writer(
+                csv_file,
+                quoting=csv.QUOTE_NONNUMERIC
+            )
             writer.writerow(['Title', 'Rating', 'Summary'])
             for title, rating, summary in movies:
                 writer.writerow([title, rating, summary])
